@@ -9,9 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Test")
-            .padding(5)
-            .background(Color.blue.blur(radius: 15))
+        Text("Hello, world!")
+        // These are the modifiers for the green background and white text
+            .padding()
+            .background(Color.green)
+            .cornerRadius(10)
+            .foregroundColor(Color.white)
+        // These are the additional modifiers for the blue background
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(10)
     }
 }
 
