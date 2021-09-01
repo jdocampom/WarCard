@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Test")
-            .padding()
+            .padding(5)
+            .background(Color.blue.blur(radius: 15))
     }
 }
 
