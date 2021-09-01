@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8615510E26DEEA3B00874091 /* SwiftUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8615510D26DEEA3B00874091 /* SwiftUITestApp.swift */; };
+		8615510E26DEEA3B00874091 /* CardWarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8615510D26DEEA3B00874091 /* CardWarApp.swift */; };
 		8615511026DEEA3B00874091 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8615510F26DEEA3B00874091 /* ContentView.swift */; };
 		8615511226DEEA3E00874091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8615511126DEEA3E00874091 /* Assets.xcassets */; };
 		8615511526DEEA3E00874091 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8615511426DEEA3E00874091 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8615510A26DEEA3B00874091 /* SwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8615510D26DEEA3B00874091 /* SwiftUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestApp.swift; sourceTree = "<group>"; };
+		8615510A26DEEA3B00874091 /* CardWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8615510D26DEEA3B00874091 /* CardWarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWarApp.swift; sourceTree = "<group>"; };
 		8615510F26DEEA3B00874091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8615511126DEEA3E00874091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8615511426DEEA3E00874091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		8615510126DEEA3B00874091 = {
 			isa = PBXGroup;
 			children = (
-				8615510C26DEEA3B00874091 /* SwiftUITest */,
+				8615510C26DEEA3B00874091 /* CardWar */,
 				8615510B26DEEA3B00874091 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +43,20 @@
 		8615510B26DEEA3B00874091 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8615510A26DEEA3B00874091 /* SwiftUITest.app */,
+				8615510A26DEEA3B00874091 /* CardWar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8615510C26DEEA3B00874091 /* SwiftUITest */ = {
+		8615510C26DEEA3B00874091 /* CardWar */ = {
 			isa = PBXGroup;
 			children = (
-				8615510D26DEEA3B00874091 /* SwiftUITestApp.swift */,
+				8615510D26DEEA3B00874091 /* CardWarApp.swift */,
 				8615510F26DEEA3B00874091 /* ContentView.swift */,
 				8615511126DEEA3E00874091 /* Assets.xcassets */,
 				8615511326DEEA3E00874091 /* Preview Content */,
 			);
-			path = SwiftUITest;
+			path = CardWar;
 			sourceTree = "<group>";
 		};
 		8615511326DEEA3E00874091 /* Preview Content */ = {
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8615510926DEEA3B00874091 /* SwiftUITest */ = {
+		8615510926DEEA3B00874091 /* CardWar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8615511826DEEA3E00874091 /* Build configuration list for PBXNativeTarget "SwiftUITest" */;
+			buildConfigurationList = 8615511826DEEA3E00874091 /* Build configuration list for PBXNativeTarget "CardWar" */;
 			buildPhases = (
 				8615510626DEEA3B00874091 /* Sources */,
 				8615510726DEEA3B00874091 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUITest;
+			name = CardWar;
 			productName = SwiftUITest;
-			productReference = 8615510A26DEEA3B00874091 /* SwiftUITest.app */;
+			productReference = 8615510A26DEEA3B00874091 /* CardWar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8615510526DEEA3B00874091 /* Build configuration list for PBXProject "SwiftUITest" */;
+			buildConfigurationList = 8615510526DEEA3B00874091 /* Build configuration list for PBXProject "CardWar" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8615510926DEEA3B00874091 /* SwiftUITest */,
+				8615510926DEEA3B00874091 /* CardWar */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8615511026DEEA3B00874091 /* ContentView.swift in Sources */,
-				8615510E26DEEA3B00874091 /* SwiftUITestApp.swift in Sources */,
+				8615510E26DEEA3B00874091 /* CardWarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +268,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CardWar/Preview Content\"";
 				DEVELOPMENT_TEAM = D27X6VQP35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -298,7 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CardWar/Preview Content\"";
 				DEVELOPMENT_TEAM = D27X6VQP35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8615510526DEEA3B00874091 /* Build configuration list for PBXProject "SwiftUITest" */ = {
+		8615510526DEEA3B00874091 /* Build configuration list for PBXProject "CardWar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8615511626DEEA3E00874091 /* Debug */,
@@ -333,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8615511826DEEA3E00874091 /* Build configuration list for PBXNativeTarget "SwiftUITest" */ = {
+		8615511826DEEA3E00874091 /* Build configuration list for PBXNativeTarget "CardWar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8615511926DEEA3E00874091 /* Debug */,
