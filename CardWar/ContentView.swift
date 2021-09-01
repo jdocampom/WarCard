@@ -9,57 +9,54 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            // MARK: - CN Tower Card
-            ZStack {
-                /// Tag: Image
-                Image("toronto")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(10)
-                /// Tag: VStack for the Text
-                VStack(alignment: .center) {
-                    Text("CN Tower")
-                        .font(.largeTitle)
-                        .padding([.top, .leading, .trailing])
-                    Text("Toronto")
-                        .font(.caption)
-                        .padding([.leading, .bottom, .trailing])
-                }
-                /// Tag: VStack Modifiers
-                .background(Color.black)
-                .opacity(0.8)
-                .cornerRadius(10)
-                /// Tag: VStack Element Modifiers
-                .foregroundColor(Color.white)
-                
-            }.padding()
+        
+        ZStack {
             
-            // MARK: - Big Ben Card
-            ZStack {
-                /// Tag: Image
-                Image("london")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(10)
-                /// Tag: VStack for the Text
-                VStack(alignment: .center) {
-                    Text("Big Ben")
-                        .font(.largeTitle)
-                        .padding([.top, .leading, .trailing])
-                    Text("London")
-                        .font(.caption)
-                        .padding([.leading, .bottom, .trailing])
+            Image("background").ignoresSafeArea()
+            
+            VStack {
+                Spacer()
+                Image("logo")
+                Spacer()
+                HStack {
+                    Spacer()
+                    Image("card2")
+                    Spacer()
+                    Image("card3")
+                    Spacer()
                 }
-                /// Tag: VStack Modifiers
-                .background(Color.black)
-                .opacity(0.8)
-                .cornerRadius(10)
-                /// Tag: VStack Element Modifiers
-                .foregroundColor(Color.white)
+                Spacer()
+                Image("dealbutton")
+                Spacer()
+                HStack {
+                    Spacer()
+                    VStack {
+                        Text("Player")
+                            .font(.headline)
+                            .foregroundColor(Color.white)
+                            .padding(.bottom, 10.0)
+                        Text("0")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                    }
+                    Spacer()
+                    VStack {
+                        Text("CPU")
+                            .font(.headline)
+                            .foregroundColor(Color.white)
+                            .padding(.bottom, 10.0)
+                        Text("0")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                    }
+                    Spacer()
+                }
+                Spacer()
                 
-            }.padding()
+            }
+            
         }
+        
     }
 }
 
