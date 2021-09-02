@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var cardList: [String] = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
-    @State var pcCard: String = "14"
-    @State var userCard: String = "13"
-    @State var pcScore: Int = 0
-    @State var userScore: Int = 0
+    @State private var pcCard: String = "card14"
+    @State private var userCard: String = "card13"
+    @State private var pcScore: Int = 0
+    @State private var userScore: Int = 0
     var body: some View {
         
         ZStack {
@@ -34,11 +33,13 @@ struct ContentView: View {
                 Spacer()
                 
                 Button(action: {
-                    userCard = cardList.randomElement()!
-                    pcCard = cardList.randomElement()!
-                    if Int(userCard)! > Int(pcCard)! {
+                    let userCardValue = Int.random(in: 2...14)
+                    let pcCardValue = Int.random(in: 2...14)
+                    userCard = "card" + String(userCardValue)
+                    pcCard = "card" + String(pcCardValue)
+                    if userCardValue > pcCardValue {
                         userScore += 1
-                    } else if Int(userCard)! < Int(pcCard)! {
+                    } else if userCardValue < pcCardValue {
                         pcScore += 1
                     } else {
                         pcScore += 0
