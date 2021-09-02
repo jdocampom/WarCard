@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var cardList: [String] = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
+    @State var pcCard: String = "14"
+    @State var userCard: String = "13"
+    @State var pcScore: Int = 0
+    @State var userScore: Int = 0
     var body: some View {
         
         ZStack {
@@ -20,13 +25,29 @@ struct ContentView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    Image("card2")
+                    Image(userCard)
                     Spacer()
-                    Image("card3")
+                    Image(pcCard)
                     Spacer()
                 }
+                
                 Spacer()
-                Image("dealbutton")
+                
+                Button(action: {
+                    userCard = cardList.randomElement()!
+                    pcCard = cardList.randomElement()!
+                    if Int(userCard)! > Int(pcCard)! {
+                        userScore += 1
+                    } else if Int(userCard)! < Int(pcCard)! {
+                        pcScore += 1
+                    } else {
+                        pcScore += 0
+                        userScore += 0
+                    }
+                }) {
+                    Image("dealbutton")
+                }
+                
                 Spacer()
                 HStack {
                     Spacer()
@@ -35,7 +56,7 @@ struct ContentView: View {
                             .font(.headline)
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
-                        Text("0")
+                        Text(String(userScore))
                             .font(.largeTitle)
                             .foregroundColor(Color.white)
                     }
@@ -45,7 +66,7 @@ struct ContentView: View {
                             .font(.headline)
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
-                        Text("0")
+                        Text(String(pcScore))
                             .font(.largeTitle)
                             .foregroundColor(Color.white)
                     }
